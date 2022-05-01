@@ -10,11 +10,9 @@ let closeButton = document.getElementsByClassName('close');
 let menu = document.getElementById('nav');
 let menuS = document.getElementById('navS');
 let body = document.body
-var width = window.innerWidth;
+let width = window.innerWidth;
+console.log (width);
 
-window.addEventListener('resize', function(){
-    test = 5
-});
 
 openButton[0].onclick = () => {
 menuS.style.display = "inline";
