@@ -53,16 +53,22 @@ grid-template-columns: 1fr;
   display: none;
 }
 .hero-button img{
-  height: 80px;
-  padding: 20px;
+  height: 75px;
+  padding: 25px;
 }
 .hero-button {
-  width: 131px;
+  width: 139px;
   background-color: black;
 }
 .hero-brand{
   display: none;
   padding: 80px; 
+}
+.hero-brand h1{
+font-size: 48px;
+}
+.hero-brand p{
+  margin: 30px 0 30px 0 ;
 }
 .dark{
   display: block;
@@ -97,7 +103,7 @@ button{
   color: black;
 }
 #nav{
-  padding: 30px 35px;
+  padding: 40px 80px;
 }
 
 .hide{
@@ -111,17 +117,16 @@ button{
   background-color: gray;
   cursor: pointer;
 }
-#shop{
+.shop{
 color: black;
 letter-spacing: 6px;
-
 }
 
 .svg:hover{
   color: gray;
 }
 
-#shop:hover{
+.shop:hover{
 color: gray;
 cursor: pointer;
 }
@@ -149,10 +154,11 @@ cursor: pointer;
     
   }
   .hero-button {
-    width: 108px;
+    width: 94px;
   }
   .hero-button img{
-    height: 60px;
+    height: 50px;
+    padding: 15px;
   }
   .big-s{
     display: none;
@@ -188,8 +194,14 @@ cursor: pointer;
   li a{
     background-image: linear-gradient(to  right, rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7));
   }
+  #nav{
+    padding: 30px 35px;
+  }
  
 }
+
+
+
 @media (max-width:375px){
   body{
     font-size: 12px;
@@ -205,10 +217,11 @@ cursor: pointer;
     height: 360px;
       }
       .hero-button {
-        width: 108px;
+        width: 90px;
       }
       .hero-button img{
-        height: 60px;
+        height: 45px;
+        padding: 15px;
       }
       .hb-f{
         display: block;
@@ -243,5 +256,8 @@ cursor: pointer;
       #logo{
         display: block;
         margin: 0 auto 0 auto;
+      }
+      #nav{
+        padding: 30px 35px;
       }
 }
