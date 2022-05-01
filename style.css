@@ -139,6 +139,7 @@ cursor: pointer;
 
 @media (min-width:376px) and (max-width:768px){
   #hero{
+    background-image: url(./images/mobile-image-hero-1.jpg);
     height: 520px;
   }
   .hb-f{
