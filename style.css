@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  color: black;
+  font-family: 'League Spartan', sans-serif;
+}
+.sm{
+  display: none;
+}
+.lg{
+  display: inline;
+  list-style: none;
+}
+li{
+  display: inline-block;
+  margin: 0 10px 0 10px;
+}
+li a{
+  text-decoration: none;
+  color:white;
+  background-image: linear-gradient(to  right, white, white);
+  padding: 5px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 0 3px;
+    transition: background 400ms ease;
+}
+li a:hover{
+  color: white;
+  background-size: 100% 3px;
+}
+.p-gray{
+  color: rgb(0, 0, 0, 0.5);
+}
+
+#hero{
+  background-image: url(./images/desktop-image-hero-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+display: grid;
+grid-template-columns: 1fr;
+}
+.hb-f{
+  align-self: flex-end;
+  justify-self: flex-end;
+  display: none;
+}
+.hero-button img{
+  height: 80px;
+  padding: 20px;
+}
+.hero-button {
+  width: 131px;
+  background-color: black;
+}
+.hero-brand{
+  display: none;
+  padding: 80px; 
+}
+.dark{
+  display: block;
+}
+ #about{
+  padding: 65px;
+}
+.light{
+  display: block;
+}
+.show{
+  display: block;
+}
+#about h3{
+  font-size: 15px;
+  font-weight:600;
+  letter-spacing: 3px;
+}
+button{
+  background-color: rgb(0, 0, 0, 0);
+  border: none;
+  display: none;
+}
+#navS{
+  background-color: white;
+  padding: 30px 35px;
+  height: 90px;
+  display: none;
+}
+
+#navS li a{
+  color: black;
+}
+#nav{
+  padding: 30px 35px;
+}
+
+.hide{
+  display: none;
+}
+#left:hover, #right:hover{
+  background-color: gray;
+  cursor: pointer;
+}
+#leftS:hover, #rightS:hover{
+  background-color: gray;
+  cursor: pointer;
+}
+#shop{
+color: black;
+letter-spacing: 6px;
+
+}
+
+.svg:hover{
+  color: gray;
+}
+
+#shop:hover{
+color: gray;
+cursor: pointer;
+}
+
+
+
+
+@media(min-width:769px){
+  .logo-c{
+    display: inline;
+    margin-right: 40px;
+  }
+}
+
+
+@media (min-width:376px) and (max-width:768px){
+  #hero{
+    height: 520px;
+  }
+  .hb-f{
+    display: block;
+    align-self: flex-end;
+    justify-self: flex-end;
+    
+  }
+  .hero-button {
+    width: 108px;
+  }
+  .hero-button img{
+    height: 60px;
+  }
+  .big-s{
+    display: none;
+  }
+  #about {
+    padding: 50px;
+  }
+  .hero-brand{
+    padding: 50px; 
+  }
+  .sm{
+    display: inline;
+    float: right;
+  }
+  .lg{
+    display: none;
+  }
+  li{
+    display: inline;
+    margin: 0 5px 0 5px;
+  }
+  button{
+    display: inline;
+  }
+  .logo-c{
+    width: 90%;
+    display: inline-block;
+  }
+  #logo{
+    display: block;
+    margin: 0 auto 0 auto;
+  }
+  li a{
+    background-image: linear-gradient(to  right, rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7));
+  }
+ 
+}
+@media (max-width:375px){
+  body{
+    font-size: 12px;
+  }
+  li a{
+    background-image: linear-gradient(to  right, rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7));
+  }
+  .big-s{
+    display: none;
+  }
+  #hero{
+    background-image: url(./images/mobile-image-hero-1.jpg);
+    height: 360px;
+      }
+      .hero-button {
+        width: 108px;
+      }
+      .hero-button img{
+        height: 60px;
+      }
+      .hb-f{
+        display: block;
+        align-self: flex-end;
+        justify-self: flex-end;
+        
+      }
+      #about{
+        padding: 50px;
+      }
+      .hero-brand{
+        padding: 50px; 
+      }
+      .sm{
+        display: inline;
+        float: right;
+      }
+      .lg{
+        display: none;
+      }
+      li{
+        display: inline;
+        margin: 0 5px 0 5px;
+      }
+      button{
+        display: inline;
+      }
+      .logo-c{
+        width: 90%;
+        display: inline-block;
+      }
+      #logo{
+        display: block;
+        margin: 0 auto 0 auto;
+      }
+}
